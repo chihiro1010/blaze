@@ -1,9 +1,145 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P883EZ2M3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6P883EZ2M3");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blaze</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      data-react-helmet="true"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon.ico"
+    />
+    <title>Blaze - 浜田市の卓球クラブ</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div id="logo-container">
+        <img id="logo" src="./img/blaze_logo.png" alt="サイトのロゴ" />
+      </div>
+    </header>
+    <main>
+      <section id="about-blaze"><img src="./img/main.png" /></section>
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+      <section id="contact">
+        <div id="contact-button">
+          <a href="mailto:chihirohba.biz@gmail.com" class="gradient4"
+            >練習参加希望はこちらから</a
+          >
+        </div>
+      </section>
+      <section id="about-blaze">
+        <h1>当クラブについて</h1>
+        <p>代表　　　　：　佐々本健太</p>
+        <p>メンバー数　：　13名</p>
+        <p>年齢層　　　：　20台後半~30台前半</p>
+      </section>
+      <section id="practice-environment">
+        <h1>練習</h1>
+        <div class="lesson-container">
+          <h2>原井小学校</h2>
+          <p>毎週月曜　19:00~21:00</p>
+          <p>参加費：100~150円</p>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.289212470998!2d132.06785607575318!3d34.899190972849894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a577a55690c51%3A0xa1d64a08519fbece!2z5rWc55Sw5biC56uL5Y6f5LqV5bCP5a2m5qCh!5e0!3m2!1sja!2sjp!4v1700831117295!5m2!1sja!2sjp"
+              width="250"
+              height="150"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="lesson-container">
+          <h2>島根県立体育館</h2>
+          <p>不定期土日　13:00~17:00</p>
+          <p>参加費：人数・施設により変動</p>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.11715848552!2d132.09100307575335!3d34.903509272848346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a59ea38c471df%3A0xca7c3841dc70293f!2z5bO25qC555yM56uL5L2T6IKy6aSo!5e0!3m2!1sja!2sjp!4v1700849387560!5m2!1sja!2sjp"
+              width="250"
+              height="150"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="lesson-container">
+          <h2>島根県立石見武道館</h2>
+          <p>不定期土日　13:00~17:00</p>
+          <p>参加費：人数により変動</p>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.11715848552!2d132.09100307575335!3d34.903509272848346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a59ebd0403d7f%3A0x7634701ba68009f!2z5bO25qC555yM56uL55-z6KaL5q2m6YGT6aSo!5e0!3m2!1sja!2sjp!4v1700849358083!5m2!1sja!2sjp"
+              width="250"
+              height="150"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="lesson-container">
+          <h2>島根県立浜田ろう学校</h2>
+          <p>不定期土曜　8:45~12:00</p>
+          <p>参加費：無料</p>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.11715848552!2d132.09100307575335!3d34.903509272848346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a59ebd0403d7f%3A0x7634701ba68009f!2z5bO25qC555yM56uL55-z6KaL5q2m6YGT6aSo!5e0!3m2!1sja!2sjp!4v1700849358083!5m2!1sja!2sjp"
+              width="250"
+              height="150"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="team-uniform">
+        <h1>チームユニフォーム</h1>
+        <img src="./img/uniform.jpg" class="uniform_img" />
+      </section>
+    </main>
+
+    <footer>
+      <p id="page-top"><a href="#">Page Top</a></p>
+      <p id="copylight">
+        <a href="./privacy.html">
+          Copyright &copy; 2023 BLAZE All rights reserved.</a
+        >
+      </p>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
