@@ -3,7 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blaze</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      data-react-helmet="true"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon.ico"
+    />
+    <title>Blaze - 浜田市の卓球クラブ</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div id="logo-container">
+        <img id="logo" src="./img/blaze_logo.png" alt="サイトのロゴ" />
+      </div>
+      <nav>
+        <ul class="gnavi">
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about-blaze"><img src="./img/main.png" /></section>
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+
+      <section id="practice-environment">
+        <h2>練習環境</h2>
+      </section>
+
+      <section id="team-uniform">
+        <h2>チームユニフォーム</h2>
+        <img src="./img/uniform_front.jpg" class="uniform_img" />
+        <img src="./img/uniform_back.jpg" class="uniform_img" />
+      </section>
+
+      <section id="contact">
+        <h2>コンタクト</h2>
+      </section>
+    </main>
+
+    <footer>
+      <p id="page-top"><a href="#">Page Top</a></p>
+      <p id="copylight">
+        &copy; 2023 サイトの著作権表示 | <a href="#">プライバシーポリシー</a>
+      </p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
 </html>
