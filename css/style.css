@@ -3,7 +3,6 @@ html[lang="ja"] {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-/* Reset some default browser styles */
 body,
 h1,
 h2,
@@ -13,29 +12,27 @@ ul {
   padding: 0;
 }
 
-/* Basic styling for the header */
 header {
   background-color: #00000000;
-  color: #ffffff88;
+  color: white88;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   opacity: 0.99;
-  position: fixed; /* ヘッダーを固定 */
-  top: 0; /* 上端に配置 */
-  width: 100%; /* 幅いっぱいに広げる */
-  z-index: 1000; /* 他の要素よりも手前に表示 */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-/* Styling for the logo */
 #logo-container {
   display: flex;
   align-items: center;
 }
 
 #logo {
-  width: 20%; /* Adjust the width as needed */
+  width: 20%;
   height: auto;
 }
 
@@ -57,30 +54,22 @@ main {
 }
 
 .gradient4 {
-  /*ボタンの形状*/
   display: inline-block;
   padding: 18px 30px;
   border-radius: 30px;
   text-decoration: none;
-  background: linear-gradient(270deg, #ff2a2a 0%, #ffe140 50%, #ff2a2a 100%);
+  background: linear-gradient(270deg, red 0%, #ffe140 50%, red 100%);
   background-size: 200% auto;
-  color: #fff;
+  color: white;
   font-weight: bold;
-  /*アニメーションの指定*/
   transition: all 0.4s ease-out;
 }
 
-/*hoverした際、グラデーションと影を付ける*/
 .gradient4:hover {
-  /*ボタンの形状*/
   border-color: transparent;
-  color: #fff;
-  /*背景の色と形状*/
-  background: linear-gradient(270deg, #ffe140 0%, #ff2a2a 50%, #ffe140 100%);
+  background: linear-gradient(270deg, #ffe140 0%, red 50%, #ffe140 100%);
   background-size: 200% auto;
   background-position: right center;
-  /*ボックスの影*/
-  box-shadow: 0 5px 10px rgb(250, 108, 159, 0.4);
 }
 
 .overlay {
@@ -89,13 +78,8 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* 白色の半透明（0.5の部分を変更して透明度を調整） */
-  z-index: -1; /* 背景よりも後ろに配置 */
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
 }
 
 section {
@@ -103,39 +87,41 @@ section {
 }
 
 p {
-  color: #ffffff;
-  text-shadow: 1px 1px 0 #00000046, -1px -1px 0 #00000046, -1px 1px 0 #00000046,
-    1px -1px 0 #00000046, 0px 1px 0 #00000046, 0-1px 0 #00000046,
-    -1px 0 0 #00000046, 1px 0 0 #00000046;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3), -1px -1px 0 rgba(0, 0, 0, 0.3),
+    -1px 1px 0 rgba(0, 0, 0, 0.3), 1px -1px 0 rgba(0, 0, 0, 0.3),
+    0px 1px 0 rgba(0, 0, 0, 0.3), 0-1px 0 rgba(0, 0, 0, 0.3),
+    -1px 0 0 rgba(0, 0, 0, 0.3), 1px 0 0 rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-  color: #ffffff;
-  text-shadow: 1px 1px 0 #00000046, -1px -1px 0 #00000046, -1px 1px 0 #00000046,
-    1px -1px 0 #00000046, 0px 1px 0 #00000046, 0-1px 0 #00000046,
-    -1px 0 0 #00000046, 1px 0 0 #00000046;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3), -1px -1px 0 rgba(0, 0, 0, 0.3),
+    -1px 1px 0 rgba(0, 0, 0, 0.3), 1px -1px 0 rgba(0, 0, 0, 0.3),
+    0px 1px 0 rgba(0, 0, 0, 0.3), 0-1px 0 rgba(0, 0, 0, 0.3),
+    -1px 0 0 rgba(0, 0, 0, 0.3), 1px 0 0 rgba(0, 0, 0, 0.3);
   margin: 0 0 20px 20px;
   font-size: 180%;
 }
 h2 {
-  color: #ffffff;
-  text-shadow: 1px 1px 0 #00000046, -1px -1px 0 #00000046, -1px 1px 0 #00000046,
-    1px -1px 0 #00000046, 0px 1px 0 #00000046, 0-1px 0 #00000046,
-    -1px 0 0 #00000046, 1px 0 0 #00000046;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3), -1px -1px 0 rgba(0, 0, 0, 0.3),
+    -1px 1px 0 rgba(0, 0, 0, 0.3), 1px -1px 0 rgba(0, 0, 0, 0.3),
+    0px 1px 0 rgba(0, 0, 0, 0.3), 0-1px 0 rgba(0, 0, 0, 0.3),
+    -1px 0 0 rgba(0, 0, 0, 0.3), 1px 0 0 rgba(0, 0, 0, 0.3);
   margin: 40px 0 20px 30px;
   font-size: 150%;
 }
 
-#map {
+.map {
   display: block;
   width: 70%;
   margin: 0 auto;
 }
 
-/* Styling for the footer */
 footer {
   background-color: #333;
-  color: #fff;
+  color: white;
   text-align: center;
   bottom: 0;
   width: 100%;
@@ -143,16 +129,16 @@ footer {
 }
 
 footer a {
-  color: #fff;
+  color: white;
 }
 
 footer a:hover {
-  color: #ff0004;
+  color: red;
   text-decoration: none;
 }
 
 .uniform_img {
-  width: 90vw; /* Adjust the width as needed */
+  width: 90vw;
   margin: 0 auto;
   height: auto;
   display: block;
@@ -167,8 +153,8 @@ footer a:hover {
 }
 
 #page-top a {
-  background: #ff0004;
-  color: #fff;
+  background: red;
+  color: white;
   text-align: center;
   display: block;
   text-decoration: none;
@@ -193,11 +179,7 @@ body.animation-in-progress {
 
 .bg {
   animation: slide 10s ease-in-out infinite alternate;
-  background-image: linear-gradient(
-    -70deg,
-    rgb(255, 255, 255) 50%,
-    rgb(255, 49, 49) 50%
-  );
+  background-image: linear-gradient(-70deg, white 50%, red 50%);
   bottom: 0;
   left: -50%;
   opacity: 0.6;
@@ -219,7 +201,7 @@ body.animation-in-progress {
 .content {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0.25em;
-  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   left: 50%;
   padding: 10vmin;
