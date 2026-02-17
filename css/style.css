@@ -88,7 +88,7 @@ body {
 }
 
 .brand-text {
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.08em;
 }
 
@@ -115,7 +115,6 @@ body {
 
 .visual-panel,
 .uniform-panel {
-  border: 1px solid var(--line);
   overflow: hidden;
 }
 
@@ -301,8 +300,6 @@ body {
 }
 
 .contact-banner {
-  border-top: 2px solid #ffc9b6;
-  border-bottom: 1px solid #ffd8c9;
   padding: 34px 0;
   text-align: left;
 }
