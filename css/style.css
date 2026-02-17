@@ -1,12 +1,13 @@
 :root {
-  --bg: #05060c;
-  --surface: #0d1222;
-  --surface-strong: #121a31;
-  --line: rgba(255, 255, 255, 0.15);
-  --text: #eef2ff;
-  --muted: #b6c1df;
+  --bg: #f8f9fd;
+  --bg-accent: #eef2ff;
+  --surface: #ffffff;
+  --surface-soft: #f7f8fc;
+  --line: #dfe4f2;
+  --text: #1a2340;
+  --muted: #5e6788;
   --accent: #ff4f7b;
-  --accent-2: #7f63ff;
+  --accent-2: #6f59ff;
   --max: 1160px;
 }
 
@@ -19,50 +20,40 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  color: var(--text);
   background: var(--bg);
+  color: var(--text);
   scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
-  position: relative;
   line-height: 1.7;
+  position: relative;
   overflow-x: hidden;
 }
 
-.noise {
-  position: fixed;
-  inset: 0;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 0.6px, transparent 0.6px);
-  background-size: 2px 2px;
-  opacity: 0.3;
-  pointer-events: none;
-  z-index: -1;
-}
-
-.aurora {
+.bg-shape {
   position: fixed;
   border-radius: 999px;
-  filter: blur(60px);
-  z-index: -2;
+  filter: blur(70px);
+  z-index: -1;
   pointer-events: none;
 }
 
-.aurora-1 {
+.bg-shape-1 {
   width: 420px;
   height: 420px;
-  top: -90px;
-  left: -110px;
-  background: #ff4f7b80;
+  top: -120px;
+  left: -120px;
+  background: #ffc6d7;
 }
 
-.aurora-2 {
-  width: 480px;
-  height: 480px;
-  right: -120px;
-  top: 220px;
-  background: #7f63ff66;
+.bg-shape-2 {
+  width: 500px;
+  height: 500px;
+  right: -180px;
+  top: 200px;
+  background: #d8d0ff;
 }
 
 .container {
@@ -80,18 +71,18 @@ body {
   position: sticky;
   top: 12px;
   z-index: 20;
-  background: rgba(8, 12, 24, 0.72);
+  background: rgba(255, 255, 255, 0.82);
   border: 1px solid var(--line);
   border-radius: 16px;
   backdrop-filter: blur(18px);
 }
 
 .brand {
-  text-decoration: none;
-  color: var(--text);
   display: flex;
   gap: 10px;
   align-items: center;
+  text-decoration: none;
+  color: var(--text);
 }
 
 .brand-logo {
@@ -114,11 +105,11 @@ body {
   text-decoration: none;
   color: var(--muted);
   font-size: 0.9rem;
-  transition: color 0.2s ease;
+  font-weight: 500;
 }
 
 .site-nav a:hover {
-  color: #fff;
+  color: var(--text);
 }
 
 .hero {
@@ -127,17 +118,17 @@ body {
 
 .eyebrow,
 .section-kicker {
-  display: inline-block;
-  letter-spacing: 0.18em;
-  font-size: 0.72rem;
-  color: #d8dfff;
   margin: 0 0 14px;
+  display: inline-block;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  color: #7a83a6;
 }
 
 .hero h1 {
   margin: 0;
-  line-height: 1.15;
-  font-size: clamp(2.2rem, 7vw, 5rem);
+  line-height: 1.2;
+  font-size: clamp(2rem, 7vw, 4.4rem);
   font-weight: 900;
 }
 
@@ -150,7 +141,7 @@ body {
 
 .hero-lead {
   margin-top: 16px;
-  max-width: 700px;
+  max-width: 720px;
   color: var(--muted);
 }
 
@@ -173,21 +164,21 @@ body {
 }
 
 .button-primary {
-  background: linear-gradient(130deg, var(--accent), var(--accent-2));
   color: #fff;
-  box-shadow: 0 14px 28px rgba(123, 86, 255, 0.4);
+  background: linear-gradient(130deg, var(--accent), var(--accent-2));
+  box-shadow: 0 10px 24px rgba(141, 93, 255, 0.25);
 }
 
 .button-ghost {
-  border: 1px solid var(--line);
   color: var(--text);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  background: #ffffff;
 }
 
 .hero-metrics {
-  list-style: none;
   margin: 28px 0 0;
   padding: 0;
+  list-style: none;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -199,10 +190,10 @@ body {
 
 .hero-metrics span {
   display: block;
-  color: #fff;
-  font-size: 1.7rem;
+  color: var(--text);
   font-weight: 900;
-  line-height: 1;
+  font-size: 1.5rem;
+  line-height: 1.1;
 }
 
 .visual-panel {
@@ -210,7 +201,8 @@ body {
   border-radius: 24px;
   overflow: hidden;
   border: 1px solid var(--line);
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(34, 52, 118, 0.12);
 }
 
 .visual-panel img {
@@ -225,7 +217,7 @@ body {
 .section-heading h2,
 .section-heading h1 {
   margin: 0;
-  font-size: clamp(1.8rem, 4vw, 2.9rem);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
 }
 
 .about-grid {
@@ -238,8 +230,9 @@ body {
 .card {
   border-radius: 20px;
   border: 1px solid var(--line);
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  background: var(--surface);
   padding: 24px;
+  box-shadow: 0 10px 26px rgba(44, 62, 128, 0.08);
 }
 
 .large-card h3 {
@@ -247,7 +240,10 @@ body {
   font-size: 1.6rem;
 }
 
-.large-card p {
+.large-card p,
+.privacy-card p,
+.contact-banner p,
+.practice-card .meta {
   margin: 0;
   color: var(--muted);
 }
@@ -264,12 +260,12 @@ body {
 }
 
 .info-list div {
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+  border-bottom: 1px dashed var(--line);
   padding-bottom: 10px;
 }
 
 .info-list dt {
-  color: #d3dcfb;
+  color: #7b84a7;
   font-size: 0.82rem;
 }
 
@@ -292,7 +288,6 @@ body {
 
 .practice-card .meta {
   margin: 6px 0 12px;
-  color: var(--muted);
   font-size: 0.95rem;
 }
 
@@ -317,9 +312,9 @@ body {
 .contact-banner {
   text-align: center;
   padding: 54px 24px;
-  background: linear-gradient(145deg, rgba(255, 79, 123, 0.25), rgba(127, 99, 255, 0.22));
   border-radius: 26px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid #e5d8ff;
+  background: linear-gradient(145deg, #fff3f7, #f2eeff);
 }
 
 .contact-banner h2 {
@@ -328,21 +323,21 @@ body {
 }
 
 .contact-banner p {
-  color: var(--muted);
   max-width: 620px;
   margin: 10px auto 24px;
 }
 
 .site-footer {
   margin-top: 90px;
-  text-align: center;
   padding: 34px 10px 42px;
+  text-align: center;
   border-top: 1px solid var(--line);
   color: var(--muted);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .site-footer a {
-  color: #fff;
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -364,18 +359,13 @@ body {
   font-size: 1.2rem;
 }
 
-.privacy-card p {
-  margin: 0;
-  color: var(--muted);
-}
-
 @media (max-width: 900px) {
   .site-header {
     width: 92vw;
     top: 8px;
     padding: 12px 14px;
-    flex-wrap: wrap;
     gap: 8px;
+    flex-wrap: wrap;
   }
 
   .site-nav {
