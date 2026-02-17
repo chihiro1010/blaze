@@ -32,74 +32,85 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
   </head>
   <body>
-    <div class="bg-layer"></div>
+    <div class="noise"></div>
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
 
-    <header class="site-header">
-      <a href="#top" class="brand" id="top">
+    <header class="site-header" id="top">
+      <a href="#top" class="brand">
         <img src="./img/blaze_logo.png" alt="Blazeロゴ" class="brand-logo" />
         <span class="brand-text">BLAZE</span>
       </a>
       <nav class="site-nav" aria-label="メインナビゲーション">
-        <a href="#about">クラブ紹介</a>
-        <a href="#practice">練習情報</a>
-        <a href="#uniform">ユニフォーム</a>
-        <a href="#contact">参加方法</a>
+        <a href="#about">About</a>
+        <a href="#practice">Practice</a>
+        <a href="#uniform">Uniform</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <section class="hero">
-        <div class="hero-content">
-          <p class="badge">Shimane Hamada Table Tennis Club</p>
-          <h1>熱く、楽しく、
-            <span>本気で卓球。</span>
-          </h1>
-          <p>
-            Blazeは、浜田市を拠点に活動する卓球クラブです。経験者はもちろん、
-            向上心のある方を歓迎しています。
-          </p>
-          <a href="mailto:blaze.hamada2018@gmail.com" class="cta-button"
+        <p class="eyebrow">HAMADA CITY TABLE TENNIS CLUB</p>
+        <h1>
+          Play with <span>Heat</span>,<br />
+          Grow with <span>Style</span>.
+        </h1>
+        <p class="hero-lead">
+          浜田市を拠点に、競技志向と楽しさを両立する卓球クラブ。
+          一人ひとりの挑戦をチームで支え、次のレベルへ進む場をつくります。
+        </p>
+        <div class="hero-actions">
+          <a href="mailto:blaze.hamada2018@gmail.com" class="button-primary"
             >練習参加を申し込む</a
           >
+          <a href="#practice" class="button-ghost">練習日程を見る</a>
         </div>
-        <div class="hero-image-wrap">
-          <img src="./img/main.png" alt="Blazeメンバー" class="hero-image" />
-        </div>
+        <ul class="hero-metrics">
+          <li><span>2018</span>創立</li>
+          <li><span>14</span>メンバー</li>
+          <li><span>4</span>練習拠点</li>
+        </ul>
+      </section>
+
+      <section class="visual-panel">
+        <img src="./img/main.png" alt="Blazeメンバー" />
       </section>
 
       <section class="section" id="about">
-        <h2 class="section-title">クラブ紹介</h2>
-        <div class="glass-card stats-grid">
-          <div>
-            <p class="label">活動拠点</p>
-            <p class="value">島根県浜田市</p>
-          </div>
-          <div>
-            <p class="label">創立</p>
-            <p class="value">2018年</p>
-          </div>
-          <div>
-            <p class="label">代表</p>
-            <p class="value">佐々本 健太</p>
-          </div>
-          <div>
-            <p class="label">メンバー</p>
-            <p class="value">14名（男性11名 / 女性3名）</p>
-          </div>
-          <div>
-            <p class="label">年齢層</p>
-            <p class="value">20代後半〜30代前半</p>
-          </div>
+        <div class="section-heading">
+          <p class="section-kicker">ABOUT BLAZE</p>
+          <h2>クラブ紹介</h2>
+        </div>
+        <div class="about-grid">
+          <article class="card large-card">
+            <h3>競技力とコミュニティの両立</h3>
+            <p>
+              Blazeは経験者を中心に、より高いレベルを目指して練習しています。
+              同時に、初心者やブランクのある方にも安心して参加いただける
+              オープンな雰囲気を大切にしています。
+            </p>
+          </article>
+          <article class="card info-list">
+            <dl>
+              <div><dt>活動拠点</dt><dd>島根県浜田市</dd></div>
+              <div><dt>代表</dt><dd>佐々本 健太</dd></div>
+              <div><dt>年齢層</dt><dd>20代後半〜30代前半</dd></div>
+              <div><dt>構成</dt><dd>14名（男性11名 / 女性3名）</dd></div>
+            </dl>
+          </article>
         </div>
       </section>
 
       <section class="section" id="practice">
-        <h2 class="section-title">練習情報</h2>
+        <div class="section-heading">
+          <p class="section-kicker">PRACTICE SCHEDULE</p>
+          <h2>練習情報</h2>
+        </div>
         <div class="practice-grid">
-          <article class="glass-card practice-card">
+          <article class="card practice-card">
             <h3>原井小学校</h3>
-            <p>毎週月曜 19:00〜21:00</p>
-            <p>参加費：100〜150円</p>
+            <p class="meta">毎週月曜 19:00〜21:00 / 参加費：100〜150円</p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.289212470998!2d132.06785607575318!3d34.899190972849894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a577a55690c51%3A0xa1d64a08519fbece!2z5rWc55Sw5biC56uL5Y6f5LqV5bCP5a2m5qCh!5e0!3m2!1sja!2sjp!4v1700831117295!5m2!1sja!2sjp"
               loading="lazy"
@@ -108,10 +119,9 @@
             ></iframe>
           </article>
 
-          <article class="glass-card practice-card">
+          <article class="card practice-card">
             <h3>島根県立体育館</h3>
-            <p>不定期土日 13:00〜17:00</p>
-            <p>参加費：人数・施設により変動</p>
+            <p class="meta">不定期土日 13:00〜17:00 / 参加費：人数・施設により変動</p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.11715848552!2d132.09100307575335!3d34.903509272848346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a59ea38c471df%3A0xca7c3841dc70293f!2z5bO25qC555yM56uL5L2T6IKy6aSo!5e0!3m2!1sja!2sjp!4v1700849387560!5m2!1sja!2sjp"
               loading="lazy"
@@ -120,10 +130,9 @@
             ></iframe>
           </article>
 
-          <article class="glass-card practice-card">
+          <article class="card practice-card">
             <h3>島根県立石見武道館</h3>
-            <p>不定期土日 13:00〜17:00</p>
-            <p>参加費：人数により変動</p>
+            <p class="meta">不定期土日 13:00〜17:00 / 参加費：人数により変動</p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.11715848552!2d132.09100307575335!3d34.903509272848346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a59ebd0403d7f%3A0x7634701ba68009f!2z5bO25qC555yM56uL55-z6KaL5q2m6YGT6aSo!5e0!3m2!1sja!2sjp!4v1700849358083!5m2!1sja!2sjp"
               loading="lazy"
@@ -132,10 +141,9 @@
             ></iframe>
           </article>
 
-          <article class="glass-card practice-card">
+          <article class="card practice-card">
             <h3>島根県立浜田ろう学校</h3>
-            <p>不定期土曜 8:45〜12:00</p>
-            <p>参加費：無料</p>
+            <p class="meta">不定期土曜 8:45〜12:00 / 参加費：無料</p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.11715848552!2d132.09100307575335!3d34.903509272848346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a59ebd0403d7f%3A0x7634701ba68009f!2z5bO25qC555yM56uL55-z6KaL5q2m6YGT6aSo!5e0!3m2!1sja!2sjp!4v1700849358083!5m2!1sja!2sjp"
               loading="lazy"
@@ -147,20 +155,27 @@
       </section>
 
       <section class="section" id="uniform">
-        <h2 class="section-title">チームユニフォーム</h2>
-        <div class="glass-card uniform-card">
-          <img src="./img/uniform.jpg" alt="Blazeのチームユニフォーム" />
+        <div class="section-heading">
+          <p class="section-kicker">TEAM STYLE</p>
+          <h2>チームユニフォーム</h2>
         </div>
+        <article class="card uniform-card">
+          <img src="./img/uniform.jpg" alt="Blazeのチームユニフォーム" />
+        </article>
       </section>
 
       <section class="section" id="contact">
-        <div class="contact-card">
-          <h2>まずは見学・体験から</h2>
-          <p>お気軽にメールでご連絡ください。日程調整のうえ、ご案内します。</p>
-          <a href="mailto:blaze.hamada2018@gmail.com" class="cta-button"
+        <article class="contact-banner">
+          <p class="section-kicker">JOIN US</p>
+          <h2>見学・体験参加を受付中</h2>
+          <p>
+            卓球が上手くなりたい、仲間と真剣に取り組みたい方へ。
+            まずは気軽にご連絡ください。
+          </p>
+          <a href="mailto:blaze.hamada2018@gmail.com" class="button-primary"
             >練習参加希望はこちら</a
           >
-        </div>
+        </article>
       </section>
     </main>
 

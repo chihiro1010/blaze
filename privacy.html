@@ -28,9 +28,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
   </head>
   <body>
-    <div class="bg-layer"></div>
+    <div class="noise"></div>
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
 
-    <header class="site-header">
+    <header class="site-header" id="top">
       <a href="./index.html" class="brand">
         <img src="./img/blaze_logo.png" alt="Blazeロゴ" class="brand-logo" />
         <span class="brand-text">BLAZE</span>
@@ -40,10 +42,13 @@
       </nav>
     </header>
 
-    <main>
-      <section class="section privacy-section">
-        <h1 class="section-title">プライバシーポリシー</h1>
-        <div class="glass-card privacy-card">
+    <main class="container privacy-main">
+      <section class="section">
+        <div class="section-heading">
+          <p class="section-kicker">PRIVACY POLICY</p>
+          <h1>プライバシーポリシー</h1>
+        </div>
+        <article class="card privacy-card">
           <p>
             このウェブサイトでは、お客様の個人情報を尊重し、保護するために最善を尽くしています。以下に、収集する情報とその利用方法について説明いたします。
           </p>
@@ -79,12 +84,12 @@
           </p>
 
           <p>ご不明点がありましたら、お気軽にお問い合わせください。</p>
-        </div>
+        </article>
       </section>
     </main>
 
     <footer class="site-footer">
-      <a href="#" class="page-top">Page Top</a>
+      <a href="#top" class="page-top">Page Top</a>
       <p>Copyright &copy; 2023 BLAZE All rights reserved.</p>
     </footer>
   </body>
