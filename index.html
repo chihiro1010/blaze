@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ff4d2d" />
+    <meta
+      name="description"
+      content="Blazeは浜田市の卓球クラブです。練習スケジュールや参加方法、チーム情報を掲載しています。"
+    />
+    <link rel="canonical" href="https://hamada-blaze.netlify.app/" />
+
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="浜田BLAZE（ブレイズ）" />
+    <meta property="og:title" content="Blaze - 浜田市の卓球クラブ" />
+    <meta
+      property="og:description"
+      content="Blazeは浜田市の卓球クラブです。練習スケジュールや参加方法、チーム情報を掲載しています。"
+    />
+    <meta property="og:url" content="https://hamada-blaze.netlify.app/" />
+    <meta property="og:image" content="https://hamada-blaze.netlify.app/img/main.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blaze - 浜田市の卓球クラブ" />
+    <meta
+      name="twitter:description"
+      content="Blazeは浜田市の卓球クラブです。練習スケジュールや参加方法、チーム情報を掲載しています。"
+    />
+    <meta name="twitter:image" content="https://hamada-blaze.netlify.app/img/main.png" />
+    <title>Blaze - 浜田市の卓球クラブ</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -15,21 +48,31 @@
       gtag("config", "G-6P883EZ2M3");
     </script>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Blazeは浜田市の卓球クラブです。練習スケジュールや参加方法、チーム情報を掲載しています。"
-    />
-    <title>Blaze - 浜田市の卓球クラブ</title>
-
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsClub",
+        "name": "浜田BLAZE（ブレイズ）",
+        "description": "Blazeは浜田市の卓球クラブです。練習スケジュールや参加方法、チーム情報を掲載しています。",
+        "url": "https://hamada-blaze.netlify.app/",
+        "logo": "https://hamada-blaze.netlify.app/img/blaze_logo.png",
+        "image": "https://hamada-blaze.netlify.app/img/main.png",
+        "email": "blaze.hamada2018@gmail.com",
+        "sport": "卓球",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "浜田市",
+          "addressRegion": "島根県",
+          "addressCountry": "JP"
+        }
+      }
+    </script>
   </head>
   <body>
     <div class="bg-shape bg-shape-1"></div>
@@ -49,7 +92,7 @@
     </header>
 
     <main class="container">
-      <section class="visual-panel first-visual">
+      <section class="visual-panel first-visual" aria-label="クラブメインビジュアル">
         <img src="./img/main.png" alt="Blazeメンバー" />
       </section>
 
@@ -152,7 +195,7 @@
           <h2>チームユニフォーム</h2>
         </div>
         <article class="uniform-panel">
-          <img src="./img/uniform.jpg" alt="Blazeのチームユニフォーム" />
+          <img src="./img/uniform.jpg" alt="Blazeのチームユニフォーム" loading="lazy" />
         </article>
       </section>
 

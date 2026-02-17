@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+[build.environment]
+  NETLIFY_IMAGE_TAG = "noble"
+
+[build.processing]
+  skip_processing = true
